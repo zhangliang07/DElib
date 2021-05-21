@@ -34,3 +34,6 @@ DEPENDPATH += $$PWD/../EvoCalLib
 
 
 RC_ICONS = resource/home.ico
+
+DISTFILES += \
+    resource/home.ico
