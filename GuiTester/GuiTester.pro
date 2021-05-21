@@ -21,6 +21,9 @@ FORMS += \
 RESOURCES += \
   resource.qrc
 
+DISTFILES += \
+    resource/home.ico
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
@@ -34,6 +37,3 @@ DEPENDPATH += $$PWD/../EvoCalLib
 
 
 RC_ICONS = resource/home.ico
-
-DISTFILES += \
-    resource/home.ico

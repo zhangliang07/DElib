@@ -5,3 +5,6 @@ SUBDIRS += \
 	EvoObjTestFunction \
 	EvoOperatorDe \
 	GuiTester
+
+DISTFILES += \
+    README.md
