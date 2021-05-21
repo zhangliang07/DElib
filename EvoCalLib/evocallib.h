@@ -1,9 +1,4 @@
-﻿//起啥名字好呢
-//叫 高可配置性且模块化的演化算法工具
-//	通用型便携式电机振动特性分析平台
-
-
-#ifndef EVOCALLIB_H
+﻿#ifndef EVOCALLIB_H
 #define EVOCALLIB_H
 #if defined(EVOCALLIB_LIBRARY)
 #  define EVOCALLIB_EXPORT __declspec(dllexport)
