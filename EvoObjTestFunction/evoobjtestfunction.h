@@ -15,7 +15,7 @@ public:
 	virtual const char* getFunctionName(int index) override;
 	virtual const char* getFunctionInfo(int index) override;
 
-	//plaese write your target function as follow format, and make it return 0 when success.
+	//plaese write your objective function as follow format, and make it return 0 when success.
 	//please notice that the program will search the minimum of the function
 	virtual int objFunction(const double* parameters, double* results) override;
 

@@ -107,7 +107,7 @@
         <string>加载目标函数库</string>
        </property>
        <property name="text">
-        <string>load object functions</string>
+        <string>load objective functions</string>
        </property>
        <property name="icon">
         <iconset resource="resource.qrc">
@@ -118,7 +118,7 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>object function:</string>
+        <string>objective function:</string>
        </property>
       </widget>
      </item>

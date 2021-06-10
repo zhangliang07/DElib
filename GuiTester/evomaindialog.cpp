@@ -67,10 +67,10 @@ void EvoMainDialog::updateValuesToDll() {
 	int index = ui->comboBox_objectFunction->currentIndex();
 	int error = globalDll->switchObjFunction(index);
 	if(error < 0) {
-		ui->plainTextEdit->appendPlainText(tr("\nfailed(%1) to switch object function to: %2")
+		ui->plainTextEdit->appendPlainText(tr("\nfailed(%1) to switch objective function to: %2")
 			.arg(error).arg(globalDll->getObjFunctionName(index)));
 	} else {
-		ui->plainTextEdit->appendPlainText(tr("\nswitch object function to: %1")
+		ui->plainTextEdit->appendPlainText(tr("\nswitch objective function to: %1")
 			.arg(globalDll->getObjFunctionName(index)));
 	}
 
@@ -105,7 +105,7 @@ void EvoMainDialog::enableAllButtons(bool enable) {
 void EvoMainDialog::loadObjFunction(const QString& dllPath){
 		int error = globalDll->loadObjFunctionLibrary(dllPath.toLocal8Bit().data());
 		if(error < 0) {
-				QMessageBox::critical(this, "loading error", tr("error to load object functions(%1)。").arg(error));
+				QMessageBox::critical(this, "loading error", tr("error to load objective functions(%1)。").arg(error));
 				return;
 		}
 
@@ -117,7 +117,7 @@ void EvoMainDialog::loadObjFunction(const QString& dllPath){
 				auto* name = globalDll->getObjFunctionName(i);
 				ui->comboBox_objectFunction->addItem(name, i);
 		}
-		ui->plainTextEdit->appendPlainText("load object functions" + dllPath);
+		ui->plainTextEdit->appendPlainText("load objective functions" + dllPath);
 }
 
 
@@ -153,7 +153,7 @@ void EvoMainDialog::onFinished() {
 
 
 void EvoMainDialog::on_button_loadObjFunction_clicked() {
-		QString dllPath = QFileDialog::getOpenFileName(nullptr, "load object functions", "", "Library (*.dll)");
+		QString dllPath = QFileDialog::getOpenFileName(nullptr, "load objective functions", "", "Library (*.dll)");
 	if(dllPath.isEmpty()) return;
 
 		loadObjFunction(dllPath);

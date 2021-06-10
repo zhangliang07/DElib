@@ -7,7 +7,7 @@
 #endif
 
 
-//these APIs are for the target function libaray
+//these APIs are for the objective function libaray
 class EvoObjFunction {
 public:
 	virtual ~EvoObjFunction() {};
@@ -18,7 +18,7 @@ public:
 	virtual const char* getFunctionName(int index) = 0;
 	virtual const char* getFunctionInfo(int index) = 0;
 
-	//plaese write your target function as follow format, and make it return 0 when success.
+	//plaese write your objective function as follow format, and make it return 0 when success.
 	//please notice that the program will search the minimum of the function
 	virtual int objFunction(const double* parameters, double* results) = 0;
 
