@@ -1,2 +1,2 @@
 # EvoCalculateLib
-A library for evolutional calculation with flexible and uniform APIs
+A library for evolutionary calculation with flexible APIs
